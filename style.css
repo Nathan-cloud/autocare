@@ -1,0 +1,2942 @@
+/*===============================================
+Template Name: Dreamhub Auto Service HTML5 Template
+Author: 
+Description: Description
+Version: 1.0.0
+Text Domain: Auto Service
+Tags:   delivery company, grid, logistics, moving, moving company, shipping, courier, shipping company, storage, transport, transport company, warehouse.
+================================================*/
+    
+/*TABLE OF AUTO SERVICE*/
+/*=====================
+01.Auto Service Dreamhub Header Top Area Css
+02.Auto Service Dreamhub Header Area Css
+03. Auto Service Dreamhub Nav Menu Area Css 
+04. Auto Service Dreamhub Hero Area Css
+05. Auto Service Dreamhub Section Title Css
+06. Auto Service Dreamhub Feature Area Css
+07. Auto Service Dreamhub About Area Css
+08. Auto Service Dreamhub Service Area Css
+09. Auto Service Dreamhub Service Details Area Css
+10. Auto Service Dreamhub Counter Area Css
+11. Auto Service  Dreamhub Portfolio Area Css
+12. Auto Service Dreamhub Portfolio Details Area Css
+13. Auto Service  Dreamhub Work Area Css
+14. Auto Service Dreamhub Faq Area Css
+15. Auto Service Dreamhub Contact Area Css
+16. Auto Service Dreamhub Blog Area Css
+17. Auto Service Dreamhub Blog Two Area Css
+18. Auto Service Dreamhub Blog Details Area Css
+19. Auto Service Dreamhub Priching Area Css
+20. Auto Service Dreamhub Brand Area Css
+21. Auto Service Dreamhub Team Area Css
+22. Auto Service Dreamhub Scrollup Section
+23. Auto Service Dreamhub Search Popup Css
+24. Auto Service Dreamhub Loader Css
+=======================*/
+.header-top-menu {
+    background: #377EBF;
+    padding: 9px 0 9px;
+}
+.header-top-address ul li {
+    list-style: none;
+    display: inline-block;
+    font-size: 15px;
+    color: #ffffff;
+    margin-right: 45px;
+    position: relative;
+}
+.header-top-address ul li:before {
+    content: "";
+    left: -23px;
+    top: -10px;
+    position: absolute;
+    opacity: 0.200;
+    width: 1px;
+    height: 45px;
+    background-color: #ffffff;
+}
+.header-top-address ul li i {
+    margin-right: 10px;
+}
+/*header-top menu right*/
+.header-top-right {
+    text-align: right;
+}
+.header-top-right ul li {
+    list-style: none;
+    font-size: 15px;
+    color: #ffffff;
+}
+.header-top-right ul li i {
+    margin-right: 8px;
+}
+/*=====================================
+<--  Dreamhub Auto Service Header Area Css -->
+=======================================*/
+.header-area {
+
+}
+.logo {
+    text-align: left;
+}
+.logo img{
+    width: 150px;
+}
+/*sticky*/
+.sticky {
+    left: 0;
+    margin: auto;
+    position: fixed !important;
+    top: 0;
+    width: 100%;
+    -webkit-box-shadow: 0 2px 5px -2px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px -2px rgba(0, 0, 0, 0.1);
+    background: #377EBF!important;
+    transition: .5s;
+    z-index: 44;
+    animation: 500ms running fadeInUp;
+    animation-name: slideInDown;
+}
+/*stiky header logo*/
+a.active-sticky {
+    display: none;
+}
+.sticky a.active-sticky {
+    display: inline-block;
+}
+.sticky a.active {
+    display: none;
+}
+/*stiky header button*/
+.sticky .header-menu ul li a {
+    color: #fff;
+}
+.sticky .header-menu ul li a i {
+    color: #fff;
+}
+.sticky .header-menu-button a {
+    background: #fff;
+    color: #377EBF;
+    transition: .5s;
+}
+.sticky .header-menu-button a:hover {
+    border: 1px solid #fff;
+    background: transparent;
+    color: #fff;
+}
+.sticky .header-menu-button a:hover:before{
+    display: none;
+}
+
+/*header-menu*/
+.header-menu {
+    text-align: right;
+}
+.header-menu ul {
+    display: inline-block;
+}
+.header-menu ul li {
+    display: inline-block;
+    list-style: none;
+    position: relative;
+    margin: 0 0 0 35px;
+}
+
+.header-menu ul li a {
+    display: inline-block;
+    padding: 34px 0;
+    font-size: 16px;
+    line-height: 28px;
+    color: #232323;
+    font-weight: 400;
+    font-family: "Roboto";
+}
+.header-menu ul li a i {
+    font-size: 15px;
+    margin-left: 6px;
+    color: #646464;
+}
+/*header menu button*/
+.header-menu-button {
+    display: inline-block;
+    margin-left: 12px;
+}
+.header-menu-button a {
+    color: #ffffff;
+    text-align: center;
+    display: inline-block;
+    background: #377EBF;
+    padding: 11px 33px;
+    border: 1px solid transparent;
+    margin-left: 18px;
+    position: relative;
+    z-index: 1;
+}
+.header-menu-button a:hover{
+    color: #377EBF;
+}
+.header-menu-button a:before {
+    position: absolute;
+    content: "";
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: #fff;
+    right: 0;
+    z-index: -1;
+    transform: scale(0);
+    transition: .5s;
+    
+}
+.header-menu-button a:hover:before {
+    transform: scale(1);
+}
+.header-menu-button a i {
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 14px;
+}
+
+/*sub-menu*/
+.header-menu ul li .sub-menu {
+    position: absolute;
+    top: 95px;
+    left: 0;
+    background: #fff;
+    width: 250px;
+    border-radius: 3px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    margin-top: 20px;
+    border-top: 2px solid #377EBF;
+    visibility: hidden;
+    opacity: 0;
+    box-shadow: 0 0 23px rgb(0 0 0 / 10%);
+    border-bottom: 2px solid #377EBF;
+    z-index: 1;
+}
+.header-menu ul li:hover .sub-menu{
+    top: 78px;
+    visibility: visible;
+    opacity: 1;
+}
+.header-menu ul li .sub-menu li {
+    display: block;
+    margin-left: 0;
+}
+.header-menu ul li .sub-menu li a {
+    display: inline-block;
+    padding: 10px 25px;
+    margin: 0;
+    font-size: 16px;
+    color: #39374d;
+    text-transform: capitalize;
+    width: 100%;
+    text-align: left;
+}
+.header-menu ul li .sub-menu li a:hover{
+    background: #377EBF;
+    color: #fff;
+}
+
+
+/*<!-- ============================================================== -->
+<!--  Dreamhub Auto Service Hero Area Css -->
+<!-- ============================================================== -->*/
+.hero-area {
+    background: url(assets/images/banner.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 805px;
+    position: relative;
+}
+/*hreo sub title*/
+.hero-sub-title h5 {
+    margin-bottom: 17px;
+    font-size: 14px;
+    color: #377EBF;
+    font-weight: 700;
+    font-family: "Roboto";
+}
+.hero-main-title h1 {
+    font-size: 55px;
+    line-height: 60px;
+    color: #232323;
+    font-weight: 700;
+}
+.hero-description p {
+    margin-top: 23px;
+    width: 90%;
+}
+
+/*hreo button*/
+.hero-button a {
+    display: inline-block;
+    background: #377EBF;
+    padding: 10px 34px;
+    margin-top: 24px;
+    position: relative;
+    overflow: hidden;
+    font-size: 17px;
+    color: #ffffff;
+    border: 1px solid transparent;
+    margin-right: 11px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+.hero-button a:hover{
+    color: #377EBF;
+}
+.hero-button a:before {
+    position: absolute;
+    content: "";
+    z-index: -1;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 0%;
+    background: #fff;
+    transition: 0.5s;
+}
+.hero-button a:hover:before {
+    width: 100%;
+    left: 0;
+}
+.hero-button a.active {
+    background: none;
+    border: 1px solid #377EBF;
+    color: #377EBF;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+.hero-button a.active:hover{
+    color: #fff;
+}
+.hero-button a.active:after {
+    position: absolute;
+    content: "";
+    right: 0%;
+    top: 0;
+    background: #377EBF;
+    width: 0%;
+    height: 100%;
+    transition: .5s;
+    z-index: -1;
+}
+.hero-button a.active:hover:after {
+   width: 100%;
+   left: 0;
+}
+.hero-button a i {
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 14px;
+}
+/*hreo social*/
+.hero-social {
+    transform: rotate(-90deg);
+    position: absolute;
+    left: -90px;
+    top: 47%;
+}
+.hero-social ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 25px;
+}
+.hero-social ul li a {
+    display: inline-block;
+    font-size: 17px;
+    color: #232323;
+    font-weight: 500;
+}
+.hero-social ul li a:hover {
+    color: #377EBF;
+}
+/*hreo thumb*/
+.hero-thumb {
+    position: relative;
+    margin-left: 190px;
+    margin-top: 43px;
+}
+.hero-shape {
+    margin-top: -52px;
+}
+/*hreo shape*/
+.shape-1 {
+    position: absolute;
+    left: 7%;
+    top: 10%;
+}
+
+.shape-2 {
+    position: absolute;
+    top: 14%;
+    left: 33%;
+}
+.shape-3 {
+    position: absolute;
+    bottom: 16%;
+    left: 9%;
+}
+
+.shape-4 {
+    position: absolute;
+    left: 50%;
+    bottom: 24%;
+}
+.shape-5 {
+    position: absolute;
+    right: 11%;
+    top: 7%;
+}
+
+
+.shape-6 {
+    position: absolute;
+    right: 4%;
+    bottom: 22%;
+}
+
+/*animation*/
+.top-img-up-down2{
+	-webkit-animation: top-image-bounce 2s infinite ease-in-out;
+     animation: top-image-bounce 2s infinite ease-in-out;
+}
+@-webkit-keyframes top-image-bounce {
+  0% {
+    -webkit-transform: translateY(-12px);
+    transform: translateY(-12px);
+  }
+
+  50% {
+    -webkit-transform: translateY(12px);
+    transform: translateY(12px);
+  }
+
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes top-image-bounce {
+  0% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+
+  50% {
+    -webkit-transform: translateY(12px);
+    transform: translateY(12px);
+  }
+
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+
+@-webkit-keyframes left-image-bounce {
+  0% {
+    -webkit-transform: translateX(-5px);
+    transform: translateX(-5px);
+  }
+
+  50% {
+    -webkit-transform: translateX(10px);
+    transform: translateX(10px);
+  }
+
+  100% {
+    -webkit-transform: translateX(-5px);
+    transform: translateX(-5px);
+  }
+}
+
+@keyframes left-image-bounce {
+  0% {
+    -webkit-transform: translateX(-5px);
+    transform: translateX(-5px);
+  }
+
+  50% {
+    -webkit-transform: translateX(10px);
+    transform: translateX(10px);
+  }
+
+  100% {
+    -webkit-transform: translateX(-5px);
+    transform: translateX(-5px);
+  }
+}
+
+.top-img-up-down{
+	-webkit-animation: top-image-bounce 4s infinite ease-in-out;
+     animation: top-image-bounce 4s infinite ease-in-out;
+}
+@-webkit-keyframes top-image-bounce {
+  0% {
+    -webkit-transform: translateY(-12px);
+    transform: translateY(-12px);
+  }
+
+  50% {
+    -webkit-transform: translateY(12px);
+    transform: translateY(12px);
+  }
+
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes top-image-bounce {
+  0% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+
+  50% {
+    -webkit-transform: translateY(12px);
+    transform: translateY(12px);
+  }
+
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+
+@-webkit-keyframes left-image-bounce {
+  0% {
+    -webkit-transform: translateX(-5px);
+    transform: translateX(-5px);
+  }
+
+  50% {
+    -webkit-transform: translateX(10px);
+    transform: translateX(10px);
+  }
+
+  100% {
+    -webkit-transform: translateX(-5px);
+    transform: translateX(-5px);
+  }
+}
+
+.dance3 {
+    -webkit-animation: dance3 8s alternate infinite;
+    animation: dance3 8s alternate infinite;
+}
+
+@keyframes dance3 {
+    0% {
+        -webkit-transform: scale(0.5);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+    }
+}
+
+.dance2 {
+    -webkit-animation: dance2 4s alternate infinite;
+    animation: dance2 4s alternate infinite;
+}
+
+@keyframes dance2 {
+    0% {
+        -webkit-transform: translate3d(0, 0, 0);
+    }
+
+    50% {
+        -webkit-transform: translate3d(25px, -25px, 0);
+    }
+
+    100% {
+        -webkit-transform: translate3d(0, -25px, 25px);
+    }
+}
+
+.watermark-animate {
+    -webkit-animation: watermark-animate 8s infinite;
+    animation: watermark-animate 8s infinite;
+    animation-direction: alternate-reverse;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+}
+
+@keyframes watermark-animate {
+    0% {
+        left: 0;
+    }
+
+    100% {
+        left: 100%;
+    }
+}
+
+
+/*<!-- ============================================================== -->
+<!--  Dreamhub Auto Service Section title Css -->
+<!-- ============================================================== -->*/ 
+.section-title {
+    margin-bottom: 62px;
+}
+.section-main-title h1 {
+    font-size: 40px;
+    color: #232323;
+    font-weight: 700;
+    line-height: 50px;
+}
+.section-description p {
+    margin: auto;
+    width: 44%;
+    color: #464646;
+    margin-top: 20px;
+}
+/*<!-- ============================================================== -->
+<!--  Dreamhub Auto Service Feature Area Css -->
+<!-- ============================================================== -->*/ 
+.feature-area {
+    padding: 118px 0 90px;
+    background: #F8F8FF;
+}
+/*feature single box*/
+.feature-single-box {
+    background: #fff;
+    padding: 30px 30px 27px;
+    margin-bottom: 30px;
+    box-shadow: 0px 5px 15px rgba(160,162,201,0.1);
+}
+/*feature icon*/
+.feature-icon {
+    height: 100px;
+    width: 130px;
+    line-height: 93px;
+    border: 2px solid rgba(55,66,250,0.300);
+    border-radius: 50%;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+.feature-icon:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: #377EBF;
+    content: "";
+    transform: skew(-90deg) translateY(100%);
+    transform-origin: left;
+    transform-style: preserve-3d;
+    transition: all 900ms ease 100ms;
+    transition-property: all;
+    transition-duration: 900ms;
+    transition-timing-function: ease;
+    transition-delay: 100ms;
+    z-index: -1;
+}
+.feature-single-box:hover .feature-icon:before{
+    transform: skew(0deg) translateY(0);
+}
+/*feature icon img*/
+.feature-icon img {
+    transition: .5s;
+}
+.feature-single-box:hover .feature-icon img {
+    filter: brightness(0)invert(1);
+}
+/*feature content*/
+.feature-content {
+    margin: 0 59px 0px 20px;
+}
+/*feature title*/
+.feature-title h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+/*feature btn*/
+.feature-btn a {
+    font-size: 16px;
+    color: #232323;
+    display: inline-block;
+    transition: .5s;
+}
+.feature-btn a:hover {
+    color: #377EBF;
+}
+.feature-btn a i {
+    color: #232323;
+    margin-left: 10px;
+    transition: .5s;
+}
+.feature-btn a i:hover {
+    color: #377EBF;
+}
+
+/*<!-- ============================================================== -->
+<!-- Cv Dremhub Service Area Css -->
+<!-- ============================================================== -->*/
+.about-area {
+    padding: 118px 0 119px;
+}
+/*about left*/
+.about-thumb {
+    z-index: -1;
+    position: relative;
+}
+.about-shape {
+    position: absolute;
+    left: -29px;
+    top: 119px;
+    z-index: -1;
+}
+.about-shape1 {
+    position: absolute;
+    right: 42px;
+    bottom: -31px;
+    z-index: -1;
+}
+/*about right*/
+.about-right .section-title {
+    margin-bottom: 40px;
+}
+.about-right .section-description p {
+    width: 100%;
+    margin-top: 30px;
+}
+p.style-two {
+    margin-top: 30px;
+}
+/*about button*/
+.about-button a {
+    padding: 10px 34px;
+    display: inline-block;
+    background: #377EBF;
+    color: #fff;
+    border: 1px solid transparent;
+    position: relative;
+    z-index: 1;
+}
+.about-button a:hover {
+    color: #377EBF;
+}
+.about-button a:after {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 0;
+    background: #fff;
+    z-index: -1;
+    content: "";
+    transition: .5s;
+}
+.about-button a:hover:after {
+    width: 100%;
+    left: 0;
+}
+.about-button a i {
+    margin-left: 10px;
+}
+.about-singthur {
+    margin-left: 35px;
+}
+
+/*<!-- ============================================================== -->
+<!-- Dreamhub Auto Service  Service Area Css -->
+<!-- ============================================================== -->*/
+.service-area {
+    background: #F8F8FF;
+    padding: 110px 0 110px;
+}
+.service-area .section-description p {
+    width: 56%;
+}
+.service-single-box {
+    display: inline-block;
+    text-align: center;
+    padding: 0 16px 0;
+}
+.service-icon {
+    height: 100px;
+    line-height: 92px;
+    border: 2px solid rgba(55,66,250,0.300);
+    width: 100px;
+    display: inline-block;
+    border-radius: 50%;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+.service-icon:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: #377EBF;
+    content: "";
+    transform: skew(-90deg) translateY(100%);
+    transform-origin: left;
+    transform-style: preserve-3d;
+    transition: all 900ms ease 100ms;
+    transition-property: all;
+    transition-duration: 900ms;
+    transition-timing-function: ease;
+    transition-delay: 100ms;
+    z-index: -1;
+}
+.service-single-box:hover .service-icon:before{
+    transform: skew(0deg) translateY(0);
+}
+/*service icon img*/
+.service-icon img {
+    transition: .5s;
+}
+.service-single-box:hover .service-icon img {
+    filter: brightness(0)invert(1);
+}
+/*service title*/
+.service-title h3 {
+    font-size: 22px;
+    color: #232323;
+    margin: 20px 0 15px;
+}
+/*service button*/
+.service-button {
+    margin-top: 22px;
+}
+.service-button a {
+    display: inline-block;
+    color: #646464;
+    transition: .5s;
+}
+.service-button a:hover {
+    color: #377EBF;
+}
+.service-button a i {
+    margin-left: 10px;
+    font-size: 15px;
+}
+/*<!-- ============================================================== -->
+<!-- Dreamhub Auto Service Counter Area Css -->
+<!-- ============================================================== -->*/
+.counter-area {
+    padding: 140px 0 140px;
+}
+.counter-sinlge-box {
+    text-align: center;
+    position: relative;
+}
+.counter-sinlge-box:before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: -20px;
+    background: black;
+    opacity: 0.149;
+    width: 1px;
+    height: 120px;
+    background-color: #646464;
+}
+.counter-sinlge-box.style:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: -20px;
+    background: black;
+    opacity: 0.149;
+    width: 1px;
+    height: 120px;
+    background-color: #646464;
+}
+.conter-nember h1 {
+    font-size: 40px;
+    color: #377EBF;
+    font-weight: 700;
+    font-family: "Roboto";
+    display: inline-block;
+}
+.counter-title span {
+    font-size: 17px;
+    color: #646464;
+    margin-top: 2px;
+    display: inline-block;
+}
+/*<!-- ============================================================== -->
+<!-- Dreamhub Auto Service Work  Area Css -->
+<!-- ============================================================== -->*/
+.work-area {
+    padding: 109px 0 120px;
+    background: #F8F8FF;
+}
+.work-area .section-description p {
+    width: 56%;
+}
+
+/*work thubm*/
+.work-thub {
+    position: relative;
+    overflow: hidden;
+}
+.work-thub img {
+    width: 100%;
+    transition: .5s;
+    transform: scale(1.1);
+}
+.work-thub img:hover {
+    transform: scale(1.2);
+}
+.work-thub:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 3px;
+    bottom: -33px;
+    left: 0px;
+    width: 108%;
+    -webkit-clip-path: polygon(0 0, 102% 102%, 0 102%);
+    -khtml-clip-path: polygon(0 0, 102% 102%, 0 102%);
+    -moz-clip-path: polygon(0 0, 102% 102%, 0 102%);
+    -ms-clip-path: polygon(0 0, 102% 102%, 0 102%);
+    -o-clip-path: polygon(0 0, 102% 102%, 0 102%);
+    clip-path: polygon(0 0, 102% 102%, 0 102%);
+    background: rgba(56,66,251,0.7);
+    -webkit-transition: all 400ms ease;
+    -khtml-transition: all 400ms ease;
+    -moz-transition: all 400ms ease;
+    -ms-transition: all 400ms ease;
+    -o-transition: all 400ms ease;
+    transition: all 400ms ease;
+    transform: scale(0);
+    transform-origin: bottom left;
+    transition: all 400ms linear;
+}
+.work-thub:hover:after {
+    transform: scale(1.005);
+}
+/*work icon*/
+.work-icon {
+    position: absolute;
+    margin: auto;
+    text-align: center;
+    right: 0;
+    top: 30%;
+    left: 0;
+    transform: translateY(-50%);
+    transition: .5s;
+    z-index: 1;
+    opacity: 0;
+}
+.work-thub:hover .work-icon {
+    top: 57%;
+    opacity: 1;
+}
+.work-icon a i {
+    display: inline-block;
+    height: 52px;
+    width: 52px;
+    line-height: 52px;
+    background: #ffff;
+    font-size: 32px;
+    color: #377EBF;
+    border-radius: 3px;
+    text-align: center;
+}
+.work-icon p {
+    color: #fff;
+    font-size: 17px;
+    margin-top: 13px;
+}
+/*work button*/
+.work-button {
+    text-align: center;
+    margin-top: 45px;
+}
+.work-button a {
+    background: #377EBF;
+    display: inline-block;
+    color: #fff;
+    padding: 11px 34px;
+    border: 1px solid transparent;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+.work-button a:hover{
+    color: #377EBF;
+}
+.work-button a:before {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    background: #fff;
+    height: 100%;
+    transition: .5s;
+    z-index: -1;
+    width: 0;
+
+}
+.work-button a:hover:before{
+    left: 0;
+    width: 100%;
+}
+.work-button a i {
+    margin-left: 10px;
+    font-size: 15px;
+}
+
+/*<!-- ============================================================== -->
+<!-- Dreamhub Auto Service Faq Area Css -->
+<!-- ============================================================== -->*/
+/*accordion*/
+.faq-area {
+    padding: 120px 0 120px;
+}
+.faq-area .section-description p {
+    width: 60%;
+}
+/*accordion*/
+.tab_container {
+    padding: 47px 0px 14px;
+    box-shadow: 0 5px 20px rgb(88 82 174 / 10%);
+}
+.accordion li {
+    list-style: none;
+    padding: 2px 0px 15px;
+    position: relative;
+    z-index: 1;
+}
+.accordion li a {
+    position: relative;
+    width: 100%;
+    display: block;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 18px;
+    color: #fff !important;
+    z-index: 1;
+}
+.accordion li a.active span {
+    color: #377EBF;
+}
+.faq-area .accordion li a.active {
+    padding: 4px 25px 15px;
+    border-bottom: 0;
+}
+.accordion li p {
+    display: none;
+    font-size: 16px;
+    padding: 25px 0 10px 30px;
+    margin: 0;
+}
+
+.accordion a:before {
+    width: 2px;
+    height: 12px;
+    background: #232323;
+    position: absolute;
+    right: 29px;
+    content: " ";
+    top: 14px;
+    transform: rotate(0deg);
+    transition: all 0.2s ease-in-out;
+}
+
+.accordion a:after {
+    width: 12px;
+    height: 2px;
+    background: #232323;
+    position: absolute;
+    right: 24px;
+    content: " ";
+    top: 19px;
+    transition: all 0.2s ease-in-out;
+}
+.accordion a.active:after {
+    transform: rotate(0deg);
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    background: #377EBF;
+}
+
+.accordion a.active:before {
+    display: none;
+}
+
+.accordion li a span {
+    z-index: 1;
+    color: #232323;
+    font-size: 17px;
+}
+
+/* Faq New Style */
+.faq-area .accordion li a {
+    padding: 4px 25px 22px;
+    border-bottom: 1px solid rgba(100,100,100,0.2);
+    display: inline-block;
+}
+.faq-area .accordion li a:hover{
+    color: #00AFF5;
+}
+
+.faq-area .accordion li p {
+    padding: 0 77px 25px 25px;
+    border-bottom: 1px solid rgba(100,100,100,0.2);
+    font-size: 15px;
+    line-height: 26px;
+}
+.faq-area .accordion li:last-child a {
+    border:none;
+}
+
+
+
+/*<!-- ============================================================== -->
+<!-- dreamhub  Auto Service Priching Area Css -->
+<!-- ============================================================== -->*/
+.priching-area {
+    background: #F8F8FF;
+    padding: 110px 0 120px;
+}
+.priching-area .section-description p {
+    width: 55%;
+}
+
+.priching-single-box {
+    background: #fff;
+    padding: 31px 0px 50px;
+    position: relative;
+    text-align: center;
+    box-shadow: 0px 5px 12.5px rgba(92,98,207,0.06);
+}
+
+/* priching table */
+.priching-table {
+    position: absolute;
+    top: -18px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.priching-table span {
+    background: #377EBF;
+    display: inline-block;
+    font-size: 17px;
+    color: #fff;
+    padding: 3px 30px;
+}
+h3.priching-table-title {
+    font-size: 25px;
+    margin-top: 14px;
+}
+/* priching table dolar */
+.priching-table-dolar h1 {
+    font-size: 40px;
+    color: #377EBF;
+    font-family: "Roboto";
+    margin: 15px 0 40px;
+}
+.priching-table-dolar span.doler-style {
+    font-size: 17px;
+    position: relative;
+    bottom: 9px;
+    left: -6px;
+}
+/* priching table body */
+.priching-table-body ul li {
+    list-style: none;
+    border-top: 1px solid rgba(100,100,100,0.2);
+    padding: 10px 0;
+}
+.priching-table-body ul li:last-child{
+    border-bottom: 1px solid rgba(100,100,100,0.2);
+}
+.priching-table-body ul li i {
+    font-size: 14px;
+    color: #377EBF;
+    float: right;
+    position: relative;
+    right: 27px;
+    display: inline-block;
+    top: 6px;
+}
+/*priching button*/
+.priching-button {
+    margin-top: 50px;
+}
+.priching-button a {
+    z-index: 1;
+    background: transparent;
+    color: #377EBF;
+    display: inline-block;
+    padding: 10px 32px;
+    border: 1px solid #377EBF;
+    position: relative;
+    overflow: hidden;
+}
+.priching-button a:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    height: 100%;
+    background: #377EBF;
+    width: 0;
+    z-index: -1;
+    transition: .5s;
+}
+
+.priching-button a.active {
+    background: #377EBF;
+    color: #fff;
+}
+
+.priching-button a i {
+    margin-left: 10px;
+    font-size: 15px;
+}
+/*all hover*/
+
+.priching-single-box:hover .priching-button a:after {
+    width: 100%;
+    left: 0;
+}
+.priching-single-box:hover .priching-button a {
+    color: #fff;
+}
+/*<!-- ============================================================== -->
+<!-- dreamhub  Auto Service Contact Area Css -->
+<!-- ============================================================== -->*/
+.contact-area {
+    padding: 110px 0 156px;
+}
+.contact-area .section-description p {
+    width: 62%;
+}
+.contact-thumb {
+    position: relative;
+}
+.contact-thumb-shape {
+    position: absolute;
+    left: -27px;
+    bottom: -37px;
+    z-index: -1;
+}
+.row.contact_bg {
+    padding: 43px 23px 50px;
+    background: #fff;
+    box-shadow: 0px 5px 15px rgb(88 82 174 / 10%);
+    position: relative;
+}
+.row.contact_bg p {
+    color: #232323;
+    margin-bottom: 25px;
+}
+.form_box input {
+    border: 1px solid rgba(100,100,100,0.1);
+    width: 100%;
+    height: 50px;
+    padding: 0 18px;
+    margin-bottom: 20px;
+    outline: 0;
+}
+.form_box input::placeholder {
+    color: rgba(100,100,100,0.8);
+}
+.form_box textarea {
+    width: 100%;
+    height: 135px;
+    padding: 14px 18px;
+    border:  1px solid rgba(100,100,100,0.1);
+    outline: 0;
+}
+.form_box textarea::placeholder {
+    color: rgba(100,100,100,0.8);
+}
+.contact-form-button button {
+    background: #377EBF;
+    color: #fff;
+    border: 1px solid #377EBF;
+    padding: 11px 33px;
+    margin-top: 35px;
+    position: relative;
+    z-index: 1;
+    transition: .5s;
+}
+.contact-form-button button:hover {
+    color: #377EBF;
+}
+.contact-form-button button:before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    content: "";
+    background: #fff;
+    height: 100%;
+    transition: .5s;
+    width: 0;
+    z-index: -1;
+}
+.contact-form-button button:hover:before {
+    width: 100%;
+    left: 0;
+}
+.contact-form-button button i {
+    margin-left: 10px;
+}
+.contact-form-shape {
+    position: absolute;
+    bottom: 50px;
+    right: -76%;
+}
+.contact-form-shape-one {
+    position: absolute;
+    bottom: -33px;
+    right: -79%;
+    z-index: -1;
+}
+
+/*<!-- ============================================================== -->
+<!-- Auto Service  Dreamhub Brand Area Css -->
+<!-- ============================================================== -->*/
+.brand-area {
+    background: #F8F8FF;
+    padding: 120px 0 120px;
+}
+.brand-area.style-two {
+    background: #fff;
+}
+.single-brand-item {
+    text-align: center;
+}
+
+.brand-thumb img {
+    transition: .5s;
+    filter: brightness(0.5)invert(0.4);
+}
+.brand-thumb img:hover {
+    filter: brightness(1)invert(0);
+}
+.owl-carousel .owl-item img {
+    display: inline-block !important;
+}
+
+
+/*<!-- ============================================================== -->
+<!-- Auto Service  Dreamhub Footter Area Css -->
+<!-- ============================================================== -->*/
+.footer-area {
+    background: #030F27;
+    padding: 117px 0 10px;
+}
+
+.footer-logo {
+    margin-top: -5px;
+}
+.footer-logo img{
+    width: 160px;
+}
+.footer-widget-description p {
+    color: #fff;
+    margin-top: 44px;
+    opacity: 0.800;
+    width: 80%;
+}
+/*footer-widget-title*/
+.footer-widget-title h2 {
+    font-size: 20px;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+.footer-widget-follow ul li {
+    list-style: none;
+    display: inline-block;
+}
+.footer-widget-follow ul li a {
+    display: inline-block;
+    color: #377EBF;
+    height: 31px;
+    width: 31px;
+    line-height: 31px;
+    background: #fff;
+    border-radius: 50%;
+    text-align: center;
+    margin-right: 10px;
+    margin-top: 5px;
+    transition: .5s;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    border: 1px solid #fff;
+}
+.footer-widget-follow ul li a:hover {
+    color: #fff;
+    border: 1px solid transparent;
+}
+.footer-widget-follow a:before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 0%;
+    background: #377EBF;
+    border-radius: 50%;
+    z-index: -1;
+    transition: .5s;
+}
+.footer-widget-follow a:hover:before {
+    width: 100%;
+}
+.footer-widget-follow ul li a:hover {
+    background: #573FEB;
+    color: #fff;
+}
+/*company widget info*/
+.company-widget-info ul li {
+    list-style: none;
+}
+.company-widget-info ul li a {
+    display: inline-block;
+    margin-bottom: 12px;
+    opacity: 0.800;
+    font-size: 16px;
+    color: #ffffff;
+}
+.company-widget-info ul li a:hover {
+    color: #377EBF;
+}
+/*company-widget-address */
+
+.company-widget-address ul li{
+    list-style: none;
+}
+.company-widget-address ul li {
+    color: #fff;
+    margin-bottom: 17px;
+    opacity: 0.702;
+}
+.company-widget-address ul li i {
+    margin-right: 10px;
+
+}
+
+/*footer bottom*/
+.row.footer_btm_bg {
+    margin-top: 126px;
+    position: relative;
+    text-align: center;
+}
+.row.footer_btm_bg:before {
+    opacity: 0.200;
+    position: absolute;
+    content: "";
+    left: 12px;
+    width: 98%;
+    height: 1px;
+    background: #fff;
+    top: -29px;
+}
+.footer-bottom-content p {
+    color: #fff;
+    opacity: 0.702;
+}
+.footer-bottom-content p span {
+    color: #377EBF;
+}
+.footter-bottm-right {
+    text-align: right;
+}
+.footter-bottm-right a {
+    display: inline-block;
+    opacity: 0.800;
+    color: #ffffff;
+}
+
+/*<!-- ============================================================== -->
+<!-- Dreamhub Auto Service Breadcumb Area Css -->
+<!-- ============================================================== -->*/
+.breadcumb-area {
+    background: url(assets/images/bridcumb.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 500px;
+    position: relative;
+}
+.breadcumb-area:before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: #010658;
+    opacity: 0.700;
+}
+.breacumb-content {
+    text-align: center;
+    z-index: 1;
+    position: relative;
+}
+.breadcumb-title h1 {
+    font-size: 50px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+.breadcumb-content-text a {
+    color: #fff;
+    transition: .5s;
+}
+.breadcumb-content-text i {
+    color: #fff;
+    font-size: 16px;
+    margin: 0 10px 0;
+}
+.breadcumb-content-text span {
+    text-transform: uppercase;
+    color: #fff;
+}
+
+/*<!-- ============================================================== -->
+<!-- Dreamhub Auto Service Team Area Css -->
+<!-- ============================================================== -->*/
+.team-area {
+	background: #F7F7F7;
+	padding: 120px 0 90px;
+}
+.single-team-box {
+    background: url(assets/images/team-thumb.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+    padding: 50px 0 40px;
+    transition: .5s;
+    margin-bottom: 30px;
+}
+/*team thumb*/
+.team-thumb {
+    position: relative;
+    display: inline-block;
+    border-radius: 50%;
+    transition: .5s;
+    z-index: 1;
+}
+.team-thumb:after {
+    position: absolute;
+    content: "";
+    left: -9px;
+    top: -8px;
+    height: 110%;
+    width: 110%;
+    background: #E1E1E1;
+    border-radius: 100%;
+    z-index: -1;
+    transition: .5s;
+}
+.team-thumb:before {
+    position: absolute;
+    content: "";
+    background: url(assets/images/team-shape.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 113%;
+    width: 113%;
+    top: -11px;
+    left: -12px;
+    opacity: 0;
+    transition: .5s;
+}
+/*team content*/
+.team-content {
+    margin-top: 40px;
+}
+.team-title h3 a {
+    display: inline-block;
+    font-size: 22px;
+    color: #232323;
+    font-weight: 700;
+    margin-bottom: 3px;
+}
+/*team social icon*/
+.team-social-icon {
+    border-top: 1px solid rgba(56,66,251,0.2);
+    padding-top: 25px;
+    margin-top: 16px;
+}
+.team-social-icon ul li {
+    list-style: none;
+    display: inline-block;
+}
+.team-social-icon ul li a {
+    display: inline-block;
+    background: #F7F7F7;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    text-align: center;
+    margin: 0 5px;
+    color: #377EBF;
+    position: relative;
+    transition: .5s;
+    z-index: 1;
+
+}
+.team-social-icon ul li a:hover{
+    color: #fff;
+}
+.team-social-icon ul li a:before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 0%;
+    transition: .5s;
+    background: #377EBF;
+    z-index: -1;
+}
+/*all hover */
+.single-team-box:hover .team-thumb:after{
+    display: none;
+}
+.single-team-box:hover .team-title h3 a{
+    color: #377EBF;
+}
+
+
+.single-team-box:hover .team-thumb:before{
+    opacity: 1;
+}
+.team-social-icon ul li a:hover:before {
+    width: 100%;
+}
+
+/*<!-- ============================================================== -->
+<!-- Dreamhub Auto Service  Service Area style two Css -->
+<!-- ============================================================== -->*/
+.service-area.style-two {
+    padding: 120px 0 90px;
+}
+.service-single-box.style-two {
+    padding: 0;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.service-single-box.style-two .service-thumb img {
+    width: 100%;
+
+}
+.service-single-box.style-two .service-content {
+    background: #fff;
+    padding: 0 13px 30px;
+}
+.service-single-box.style-two .service-title h3 {
+    display: inline-block;
+    font-size: 22px;
+    color: #232323;
+    margin: 20px 0 15px;
+}
+.service-single-box.style-two .service-button a {
+    display: inline-block;
+    background: #377EBF;
+    color: #fff;
+    padding: 10px 033px;
+    border: 1px solid #377EBF;
+    position: relative;
+    z-index: 1;
+    transition: .5s;
+}
+.service-single-box.style-two .service-button a:hover {
+    color: #377EBF;
+}
+.service-single-box.style-two .service-button a:before{
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 0;
+    background: #fff;
+    z-index: -1;
+    transition: .5s;
+    
+}
+.service-single-box.style-two .service-button a:hover:before{
+    width: 100%;
+    left: 0;
+    
+}
+.service-single-box.style-two .service-button a i {
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+/*<!-- ============================================================== -->
+<!-- Dreamhub Auto Service Service Details Area Css -->
+<!-- ============================================================== -->*/
+.service-detials-area {
+    padding: 120px 0 90px;
+}
+/*widget search*/
+
+.widget_search {
+    padding: 30px 30px 30px;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    background: #F8F8FF;
+    box-shadow: 0px 0px 70px rgb(0 0 0 / 5%);
+}
+
+.service-detials-area .widget_search {
+    background: #F8F8FF;
+    box-shadow: none;
+}
+
+.widget_search form {
+    position: relative;
+}
+
+.widget_search input {
+    border-radius: 4px;
+    padding-left: 20px;
+    height: 60px;
+    width: 100%;
+    position: relative;
+    color: #0D0E14;
+    border: 0;
+    outline: 0;
+}
+
+button.icons {
+    border: 0;
+    font-size: 18px;
+    color: #fff;
+    padding: 1px 15px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 60px;
+    width: 60px;
+    background: #377EBF;
+    border-radius: 0 4px 4px 0;
+}
+
+/*widget categories box*/
+
+.service-detials-area .widget-categories-box {
+    background: #F8F8FF;
+    padding: 42px 40px 25px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    box-shadow: none;
+}
+
+.widget-categories-box {
+    background: #fff;
+    padding: 42px 40px 25px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    box-shadow: 0px 0px 70px rgb(0 0 0 / 5%);
+}
+
+/*title*/
+
+.categories-title h4 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+    border-bottom: 2px solid rgba(255,255,255,0.2);
+    padding: 0px 0 15px;
+    margin: 0 0 30px;
+    position: relative;
+    padding-left: 10px;
+}
+
+.categories-title h4:before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    height: 24px;
+    width: 3px;
+    background: #377EBF;
+}
+/*categories menu*/
+
+.widget-categories-menu ul {
+    display: block;
+}
+
+.widget-categories-menu ul li {
+    display: block;
+    list-style: none;
+    margin-bottom: 15px;
+    background: #F8F8FF;
+    padding: 16px 20px 16px;
+    border-radius: 4px;
+    transition: .5s;
+    border: 1px solid rgba(56,66,251,0.500);
+    position: relative;
+    z-index: 1;
+}
+.widget-categories-menu ul li:hover {
+    border: 1px solid #377EBF;
+}
+
+.widget-categories-menu ul li:before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 0;
+    background: #377EBF;
+    transition: .5s;
+    z-index: -1;
+}
+
+.widget-categories-menu ul li:hover:before{
+    width: 100%;
+}
+
+.widget-categories-menu ul li a {
+    display: block;
+    color: #377EBF;
+    transition: .5s;
+}
+.widget-categories-menu ul li a span {
+    display: inline-block;
+    float: right;
+    background: #377EBF;
+    height: 22px;
+    width: 22px;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 6px;
+    color: #fff;
+    line-height: 22px;
+    transition: .5s;
+}
+
+.widget-categories-menu ul li:hover a span {
+    background: #fff;
+    color: #0E1317;
+}
+
+.widget-categories-menu ul li:hover a {
+    color: #fff;
+}
+
+.pdf-button a {
+    display: block;
+    background: #377EBF;
+    padding: 15px 30px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.pdf-button a i {
+    float: right;
+    font-size: 20px;
+    margin-top: 2px;
+}
+
+/* Sidber Recent Post */
+
+.sidber-widget-recent-post {
+    margin-bottom: 20px;
+    background: #181e9b;
+    overflow: hidden;
+}
+.sidber-widget-recent-post .recent-widget-content {
+    padding-top: 20px;
+}
+.recent-widget-content a {
+    color: #fff !important;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 700;
+    display: block;
+    line-height: 26px;
+    transition: .5s;
+    margin-bottom: 7px;
+}
+.recent-widget-thumb {
+    float: left;
+    margin-right: 25px;
+}
+
+.sidber-widget-recent-post .recent-widget-content a {
+    color: #0E1317;
+    font-size: 18px;
+}
+
+.sidber-widget-recent-post .recent-widget-content span i {
+    margin-right: 7px;
+    color: #fff;
+}
+.sidber-widget-recent-post .recent-widget-content span {
+    color: rgba(255,255,255,0.800);
+}
+
+/* Sidber Achivement CSS */
+
+.widget-achivement ul li {
+    list-style: none;
+    margin-bottom: 6px;
+}
+
+.widget-achivement ul li a i {
+    font-size: 17px;
+    margin-right: 3px;
+}
+
+.widget-achivement ul li a {
+    font-weight: 600;
+    transition: .5s;
+    color: #646464;
+}
+
+.widget-achivement ul li a span {
+    float: right;
+}
+
+.widget-achivement ul li a:hover{
+    color: #377EBF;
+}
+
+/* Sidber Widget Gallery CSS */
+
+.widget-gallery {
+    overflow: hidden;
+}
+
+.widget-gallery-thumb {
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+/* Sidber Widget Tags CSS */
+
+.widget-tags a {
+    display: inline-block;
+    border: 2px solid #377EBF;
+    padding: 3px 20px;
+    margin: 4px 3px;
+    border-radius: 2px;
+    color: #646464;
+    font-weight: 500;
+    position: relative;
+    transition: .5s;
+    z-index: 1;
+}
+
+.widget-tags a:before {
+    position: absolute;
+    content: "";
+    left: -2px;
+    top: 0px;
+    height: 102%;
+    width: 0%;
+    background: #377EBF;
+    z-index: -1;
+    border-radius: 3px;
+    transition: .5s;
+}
+
+.widget-tags a:hover{
+    color: #fff;
+    border-color: #377EBF;
+}
+
+.widget-tags a:hover:before{
+    width: 102%;
+}
+
+/* Service Details Content CSS */
+
+.service-details-main-title {
+    padding: 20px 0 18px;
+}
+
+.service-details-main-title h1 {
+    font-size: 36px;
+}
+
+.service-details-video-thumb {
+    position: relative;
+    padding-top: 20px;
+}
+.video-icon {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    padding-top: 8px;
+}
+.video-icon a i {
+    height: 80px;
+    line-height: 80px;
+    width: 80px;
+    display: inline-block;
+    background: #fff;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #377EBF;
+    text-align: center;
+    -webkit-animation: ripple-white 1s linear infinite;
+    animation: ripple-blue 1s linear infinite;
+} 
+@-webkit-keyframes ripple-blue {
+    0% {
+        -webkit-box-shadow: 0 0 0 0 rgba(255,255,255, 0.3), 0 0 0 10px rgba(255,255,255, 0.3), 0 0 0 20px rgba(255,255,255, 0.3);
+        box-shadow: 0 0 0 0 rgba(255,255,255, 0.3), 0 0 0 10px rgba(255, 255, 255, 0.3), 0 0 0 20px rgba(255,255,255, 0.3)
+    }
+    100% {
+        -webkit-box-shadow: 0 0 0 10px rgba(255,255,255, 0.3), 0 0 0 20px rgba(255, 255, 255, 0.3), 0 0 0 30px rgba(255, 255, 255, 0);
+        box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.3), 0 0 0 20px rgba(255, 255, 255, 0.3), 0 0 0 30px rgba(255, 255, 255, 0)
+    }
+}
+
+@keyframes ripple-blue {
+    0% {
+        -webkit-box-shadow: 0 0 0 0 rgba(255,255,255, 0.3), 0 0 0 10px rgba(255,255,255, 0.3), 0 0 0 20px rgba(255,255,255, 0.3);
+        box-shadow: 0 0 0 0 rgba(255,255,255, 0.3), 0 0 0 10px rgba(255,255,255, 0.3), 0 0 0 20px rgba(255,255,255, 0.3)
+    }
+    100% {
+        -webkit-box-shadow: 0 0 0 10px rgba(255,255,255, 0.3), 0 0 0 20px rgba(255,255,255, 0.3), 0 0 0 30px rgba(255,255,255, 0);
+        box-shadow: 0 0 0 10px rgba(255,255,255, 0.3), 0 0 0 20px rgba(255,255,255, 0.3), 0 0 0 30px rgba(255,255,255, 0)
+    }
+}
+
+
+.service-details-overview-title {
+    padding: 22px 0 15px;
+}
+
+.service-details-overview-title h2 {
+    font-size: 30px;
+}
+
+.service-details-overview-list ul li {
+    list-style: none;
+    position: relative;
+    padding-left: 30px;
+    padding-right: 12px;
+    padding-bottom: 12px;
+}
+
+.service-details-overview-list ul li::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 9px;
+    height: 12px;
+    width: 12px;
+    background: #377EBF;
+    border-radius: 50%;
+}
+
+.service-details-choose-us {
+    padding-bottom: 10px;
+}
+
+.service-details-choose-us-title {
+    padding: 5px 0 15px;
+}
+
+.service-details-choose-us-title h2 {
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+.service-details-box {
+    background: #F8F8FF;
+    padding: 30px 30px 10px;
+    margin-bottom: 30px;
+    position: relative;
+}
+.service-details-number {
+    position: absolute;
+    right: 60px;
+}
+
+.service-details-number h2 {
+    -webkit-text-stroke-width: 1px;
+    color: transparent;
+    -webkit-text-stroke-color: #515152;
+    font-size: 48px;
+    font-weight: 600;
+    font-family: "Rubik";
+}
+
+.service-details-icon i {
+    font-size: 50px;
+    color: #377EBF;
+}
+
+.service-details-content h2 {
+    font-size: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.service-details-thumb img {
+    width: 100%;
+}
+
+.service-details-video-thumb-inner img {
+    width: 100%;
+}
+/*
+<!-- ============================================================== -->
+<!--Dreamhub Auto Service Portfolio Area Css -->
+<!-- ============================================================== -->*/
+.protfolio-area {
+    padding: 120px 0 90px;
+}
+.protfoli-single-box {
+    margin-bottom: 30px;
+}
+/*profolio thumb*/
+.protfolio-thumb {
+    position: relative;
+}
+.protfolio-thumb:before {
+    transition: .5s;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0px;
+    width: 100%;
+    background: rgba(56,66,251,0.7);
+    height: 100%;
+    opacity: 0;
+}
+.protfolio-thumb:hover:before {
+    opacity: 1;
+}
+.protfolio-thumb img {
+    width: 100%;
+}
+/*protfolio content*/
+.profolio-content {
+    opacity: 0;
+    position: absolute;
+    top: 45%;
+    text-align: center;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transition: .5s;
+}
+.protfolio-thumb:hover .profolio-content {
+    top: 35%;
+    opacity: 1;
+}
+/*protfolio social icon*/
+.protfolo-social-icon {
+    margin-bottom: 77px;
+}
+.protfolo-social-icon a {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    background: #fff;
+    font-size: 15px;
+    color: #377EBF;
+    border-radius: 50%;
+}
+.profolio-title h3 a {
+    display: inline-block;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 700;
+}
+.profolio-title span {
+    color: #fff;
+}
+
+/*
+<!-- ============================================================== -->
+<!--Dreamhub Auto Service Portfolio Details Area Css -->
+<!-- ============================================================== -->*/
+
+.portfolio-detials-area {
+    padding: 95px 0 100px;
+}
+.portfolio-details-main-title {
+    padding: 0 0 18px;
+}
+
+.portfolio-details-text {
+    padding-bottom: 1px;
+}
+
+.portfolio-details-overview-title {
+    padding: 22px 0 15px;
+}
+
+.portfolio-details-overview-title h2 {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.portfolio-details-overview-list ul li {
+    list-style: none;
+    position: relative;
+    padding-left: 30px;
+    padding-right: 12px;
+    padding-bottom: 12px;
+}
+
+.portfolio-details-overview-list ul li::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 9px;
+    height: 12px;
+    width: 12px;
+    background: #377EBF;
+    border-radius: 50%;
+}
+
+.portfolio-details-thumb img {
+    width: 100%;
+}
+
+.portfolio-details-thumb {
+    margin-top: 20px;
+}
+
+.portfolio-details-clients-title {
+    padding-bottom: 10px;
+}
+
+.portfolio-details-clients-title h2 {
+    font-size: 30px;
+    font-weight: 800;
+}
+
+
+/***
+======================================================
+<--  Auto Service Dreamhub Blog grid Area Css -->
+======================================================***/
+.blog-area {
+    padding: 120px 0 90px;
+}
+.blog-two-area {
+	padding: 120px 0 115px;
+	background: #F8F8FF;
+}
+.blog-two-area .blog-details-main {
+	padding: 30px 30px 0;
+}
+
+/*single blog box*/
+.single-blog-box {
+    margin-bottom: 30px;
+}
+.blog-thumb {
+    overflow: hidden;
+}
+.blog-thumb img {
+    width: 100%;
+    transform: scale(1.1);
+    transition: .5s;
+}
+.single-blog-box:hover .blog-thumb img {
+    transform: scale(1.2);
+}
+/*single content*/
+.blog-content {
+    background: #fff;
+    padding: 25px 51px 30px 31px;
+    box-shadow: 0 5px 20px rgb(88 82 174 / 10%);
+}
+/* blog meta*/
+span.meta-blog-date {
+    margin-right: 10px;
+}
+.meta-blog span i {
+    margin-right: 10px;
+    color: #377EBF;
+}
+/* blog title*/
+.blog-title {
+    margin: 14px 0 21px;
+}
+.blog-title h3 a {
+    display: inline-block;
+    color: #232323;
+    font-size: 22px;
+    font-weight: 700;
+}
+/* blog button*/
+.blog-button {
+    border-top: 1px solid rgba(56,66,251,0.300);
+    padding-top: 30px;
+}
+.blog-button a {
+    padding: 10px 40px;
+    display: inline-block;
+    border: 1px solid #377EBF;
+    color: #377EBF;
+    position: relative;
+    z-index: 1;
+
+}
+.blog-button a:hover{
+    color: #fff;
+}
+.blog-button a:before {
+    position: absolute;
+    right: 0;
+    top: 0;
+    content: "";
+    height: 100%;
+    width: 0;
+    background: #377EBF;
+    transition: .5s;
+    z-index: -1;
+    
+}
+.blog-button a:hover:before{
+    width: 100%;
+    left: 0;
+
+}
+.single-blog-box:hover .blog-title h3 a{
+    color: #377EBF;
+}
+
+/***
+======================================================
+<--  Dreamhub Atuo Service Blog Details Area Css -->
+======================================================***/
+
+.blog-detials-area {
+    padding: 100px 0 100px;
+    background: #F8F8FF;
+}
+
+.blog-grid-area {
+    padding: 120px 0 90px;
+}
+
+.blog-details-main {
+    background: #fff;
+    padding: 30px;
+    box-shadow: 0px 0px 70px rgba(0, 0, 0, 0.05);
+}
+.blog-details-meta {
+    background: #F8F8FF;
+    padding: 16px 30px;
+}
+
+.blog-details-meta span {
+    margin-right: 30px;
+}
+
+.blog-details-meta span i {
+    color: #009E66;
+    padding-right: 5px;
+}
+
+.blog-details-content {
+    padding: 20px 0 18px;
+}
+
+.blog-details-content h2 {
+    font-size: 30px;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+.blog-details-thumb img {
+    width: 100%;
+}
+
+.blog-details-des {
+    padding: 30px 0 10px;
+}
+
+.blog-details-blockquote {
+    background: #F8F8FF;
+    padding: 40px 38px 26px;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.blog-details-blockquote blockquote {
+    font-size: 18px;
+}
+
+.blog-details-video-thumb {
+    margin-top: 30px;
+    position: relative;
+}
+
+.blog-details-video-thumb img {
+    width: 100%;
+}
+
+.blog-details-video-thumb-inner img {
+    width: 100%;
+}
+
+.blog-details-content h3 {
+    font-size: 24px;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+.blog-details-content-list p i {
+    font-size: 14px;
+    height: 32px;
+    width: 32px;
+    border: 1px solid #ddd;
+    text-align: center;
+    line-height: 31px;
+    border-radius: 100%;
+    margin-right: 15px;
+    color: #377EBF;
+}
+
+.blog-detials-area .blog-content {
+    padding: 20px 30px 38px;
+}
+
+.blog-details-button a {
+    display: inline-block;
+    border: 2px solid #377EBF;
+    padding: 3px 20px;
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+
+.blog-details-button a:before {
+    position: absolute;
+    content: "";
+    left: -2px;
+    top: -1px;
+    height: 104%;
+    width: 104%;
+    background: #377EBF;
+    z-index: -1;
+    border-radius: 3px;
+    transition: .5s;
+}
+
+.blog-details-button a.active {
+    background: transparent;
+    transition: .5s;
+    margin-left: 10px;
+    color: #377EBF;
+}
+.blog-details-button a.active:before{
+    background: transparent;
+}
+
+.blog-details-button a.active:hover:before{
+    background: #377EBF;
+}
+
+.blog-details-button a.active:hover{
+    color: #fff;
+    border-color: #377EBF;
+}
+
+.blog-details-social {
+    text-align: right;
+}
+
+.blog-details-social a {
+    display: inline-block;
+    border: 2px solid #377EBF;
+    height: 40px;
+    width: 40px;
+    line-height: 38px;
+    text-align: center;
+    border-radius: 100%;
+    font-size: 14px;
+    transition: .5s;
+    margin-left: 5px;
+    color: #377EBF;
+}
+
+.blog-details-social a:hover{
+    background: #377EBF;
+    border-color: #377EBF;
+    color: #fff;
+}
+
+/* Blog Details Author */
+
+.blog-details-author {
+    border-top: 2px solid rgba(255,255,255,0.2);
+    padding-top: 40px;
+    margin-top: 32px;
+}
+
+.blog-details-author-inner {
+    background: #F8F8FF;
+    padding: 30px 30px 70px;
+}
+
+.blog-details-author-thumb {
+    float: left;
+    margin-right: 30px;
+}
+
+.blog-details-author-content h2 {
+    font-size: 22px;
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+
+/* Comment CSS */
+
+.blog-details-comment {
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.blog-details-comment-thumb {
+    float: left;
+    margin-right: 30px;
+}
+
+.blog-details-comment-content {
+    overflow: hidden;
+}
+
+.blog-details-comment-content h2 {
+    font-size: 18px;
+    margin-top: 0;
+}
+
+.blog-details-comment-content span {
+    font-size: 14px;
+    margin-bottom: 6px;
+    display: block;
+}
+
+.blog-details-comment-reply {
+    position: absolute;
+    right: 25px;
+}
+
+.blog-details-comment-reply a {
+    background: #377EBF;
+    padding: 3px 20px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    border-radius: 2px;
+    display: inline-block;
+}
+
+.blog-details-comment.reply {
+    margin-left: 70px;
+    padding-top: 35px;
+    border-top: 2px solid rgba(255,255,255,0.2);
+}
+
+/* Blog Details Contact */
+
+.blog-details-contact {
+    border-top: 2px solid rgba(255,255,255,0.2);
+    margin: 12px 10px 10px;
+    padding-top: 8px;
+}
+/*input-box*/
+.input-box input {
+    width: 100%;
+    height: 50px;
+    border: 1px solid #c9c9e6;
+    margin-bottom: 30px;
+    padding: 0 20px;
+    outline: 0;
+    color: #232323;
+    border-radius: 3px;
+}
+.input-box textarea {
+    width: 100%;
+    height: 207px;
+    outline: 0;
+    border: 1px solid  #c9c9e6;
+    padding: 22px 20px 0;
+    border-radius: 3px;
+}
+/*input button*/
+.input-button {
+    margin-top: 27px;
+}
+.input-button button {
+    display: inline-block;
+    padding: 14px 40px;
+    outline: 0;
+    border: 0;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 1px;
+    font-weight: 500;
+    background: #3b42c4;
+}
+.input-button button i {
+    margin-left: 10px;
+}
+
+
+/*
+<!-- ============================================================== -->
+<!-- Auto Service Dreamhub Scrollup Section -->
+<!-- ============================================================== -->*/
+
+.scroll-area{
+  position: relative;
+  z-index: 999;
+ }
+
+.scroll-area .go-top {
+    position: fixed;
+    cursor: pointer;
+    top: 0;
+    right: 30px;
+    color: #ffffff;
+    background-image: -moz-linear-gradient(0deg, #377EBF 0%, #20236d 100%);
+    background-image: -webkit-linear-gradient(0deg, #6c70fa 0%, #292fa3 100%);
+    z-index: 9999;
+    width: 45px;
+    text-align: center;
+    height: 45px;
+    line-height: 42px;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all 0.9s ease-out 0s;
+    -moz-transition: all 0.9s ease-out 0s;
+    border-radius: 10px; 
+}
+
+.scroll-area .go-top i {
+      position: absolute;
+      top: 50%;
+      left: -4px;
+      right: 0;
+      margin: 0 auto;
+      font-size: 15px;
+      -o-transform: translateY(-50%);
+      transform: translateY(-50%);
+      -webkit-transition: all 0.5s ease-out 0s;
+      -moz-transition: all 0.5s ease-out 0s;
+  }
+
+.scroll-area .go-top i:last-child {
+    opacity: 0;
+    visibility: hidden;
+    top: 60%; 
+}
+
+.scroll-area .go-top::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-image: linear-gradient(to right, #00132b 0%, #00132b 100%);
+    background-image: -ms-linear-gradient(0deg, #303592 0%, #377EBF 100%);
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all 0.5s ease-out 0s;
+    -moz-transition: all 0.5s ease-out 0s;;
+    border-radius: 100%;
+}
+
+.scroll-area .go-top:focus, .scroll-area .go-top:hover {
+      color: #fff; 
+  }
+
+.scroll-area .go-top:focus::before, .scroll-area .go-top:hover::before {
+        opacity: 1;
+        visibility: visible; 
+}
+
+.scroll-area .go-top:focus i:first-child, .scroll-area .go-top:hover i:first-child {
+        opacity: 0;
+        top: 0;
+        visibility: hidden;
+ }
+
+.scroll-area .go-top:focus i:last-child, .scroll-area .go-top:hover i:last-child {
+        opacity: 1;
+        visibility: visible;
+        top: 50%; 
+}
+
+.scroll-area .go-top.active {
+    top: 95%;
+    -webkit-transform: translateY(-98%);
+    -moz-transform: translateY(-98%);
+    opacity: 1;
+    visibility: visible;
+    border-radius: 0;
+    right: 30px;
+    border-radius:100%;
+}
+
+.top-wrap {
+  position: relative; 
+}
+
+.top-wrap .go-top-button {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    top: 3px;
+    z-index: 1;
+    background: #3b42c4;
+}
+
+ .top-wrap .go-top-button i {
+      font-size: 20px;
+      font-weight: 700;
+      padding-left: 4px;
+      color: #fff;
+ }
+
+.top-wrap .go-top-button::after {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    left: 3px;
+    top: 3px;
+    width: 45px;
+    height: 45px;
+    -webkit-animation: ripple 1.6s ease-out infinite;
+    -moz-animation: ripple 1.6s ease-out infinite;
+    opacity: 0;
+    background-image: -moz-linear-gradient(0deg, #377EBF 0%, #377EBF 100%);
+    background-image: -webkit-linear-gradient(0deg, #377EBF 0%, #377EBF 100%);
+    border-radius: 100%;
+}
+
+.top-wrap .go-top-button:hover {
+      background-color: #222;
+      color: #fff; 
+  }
+  
+.scroll-area.home-two .top-wrap .go-top-button {
+    background: #00AFF5;
+}
+ .scroll-area.home-two .top-wrap .go-top-button::after {
+    background-image: -moz-linear-gradient(0deg, #00AFF5 0%, #00AFF5 100%);
+    background-image: -webkit-linear-gradient(0deg, #00AFF5 0%, #00AFF5 100%);
+}
+
+@keyframes ripple {
+  0%, 35% {
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transform: scale(0);
+    opacity: 1; }
+  50% {
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -o-transform: scale(1.5);
+    transform: scale(1.5);
+    opacity: 0.8; }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(2);
+    -moz-transform: scale(2);
+    -ms-transform: scale(2);
+    -o-transform: scale(2);
+    transform: scale(2); } }
+
+
+
+/*===========================
+<-- Auto Service Dreamhub Loader Css -->
+=============================*/
+.loader-wrapper {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.8s 1s ease;
+    z-index: 666;
+}
+
+.loader {
+  position: relative;
+  display: block;
+  z-index: 201;
+  top: 50%;
+  left: 50%;
+  width: 100px;
+  height: 100px;
+  margin: -50px 0 0 -50px;
+  border-radius: 50%;
+  transition: all 1s 1s ease;
+  border: 3px solid transparent;
+  border-top-color: #2d34b3;
+  -webkit-animation: spin 1.5s linear infinite;
+  -moz-animation: spin 1.5s linear infinite;
+  -o-animation: spin 1.5s linear infinite;
+  animation: spin 1.5s linear infinite;
+}
+
+.loader:before {
+  position: absolute;
+  content: '';
+  top: 6px;
+  left: 6px;
+  right: 6px;
+  bottom: 6px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-left-color: #377EBF;
+  -webkit-animation: spin 2s linear infinite;
+  -moz-animation: spin 2s linear infinite;
+  -o-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+.loader:after {
+  position: absolute;
+  content: '';
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-right-color: #fff;
+  -webkit-animation: spin 2.5s linear infinite;
+  -moz-animation: spin 2.5s linear infinite;
+  -o-animation: spin 2.5s linear infinite;
+  animation: spin 2.5s linear infinite;
+}
+
+/*/ Here comes the Magic /*/
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@-moz-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.loader-wrapper .loder-section {
+    position: fixed;
+    top: 0;
+    width: 52%;
+    height: 100%;
+    background: #111;
+    z-index: 2;
+}
+
+.loader-wrapper .loder-section.left-section {
+  left: 0;
+  transition: 1s 1.4s ease;
+}
+
+.loader-wrapper .loder-section.right-section {
+  right: 0;
+  transition: 1s 1.4s ease;
+}
+
+/*/ When page loaded /*/
+.loaded .loder-section.left-section {
+  left: -100%;
+}
+
+.loaded .loder-section.right-section {
+  right: -100%;
+}
+
+.loaded .loader-wrapper {
+  visibility: hidden;
+}
+
+.loaded .loader {
+  top: -100%;
+  opacity: 0;
+}
